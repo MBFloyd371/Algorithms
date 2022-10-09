@@ -1,0 +1,18 @@
+h1 {
+    color: blueviolet;
+    }
+
+body{
+    font-size: 20px;
+    font-family: "Baskerville Old Face";
+    color: chocolate;
+}
+
+.section {
+    background-color: aquamarine;
+}
+.header {
+    background-color: aqua;
+    color: white;
+}
+
