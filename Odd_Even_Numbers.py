@@ -1,21 +1,18 @@
 # Count odd and even numbers. Count odd and even digits of the whole number.
 
-def sum_digits(a):
-    a = input(a)
-    digits = "98456"
-    even = -2
-    odd = 1
-
-    for i in a:
-        if i in digits:
-            even += 1
+def even_or_odd(n):
+    even_count = 0
+    odd_count = 0
+    while (n > 0):
+        rem = n % 10
+        if (rem % 2 == 0):
+            even_count += 1
         else:
-            odd += 1
+            odd_count += 1
 
-    print("Even:% d, odd:% d" % (even, odd))
+        n = int(n / 10)
 
-print(sum_digits(98456))
+    print("Even count : ", even_count)
+    print("\nOdd count : ", odd_count)
 
-
-
-
+print(even_or_odd(3229967893))

@@ -1,12 +1,17 @@
 # When a user enters a number n, find the sum of all digits in all numbers from 1 to n
 
-def sum_digits(n):
-    n = 1
-    n = n + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10
-    return n
+def sum_number(n):
+    sum = 0
 
-number = 10
-result = sum_digits(number)
+    while (n > 0):
+        sum += int(n % 10)
+        n = int(n / 10)
+
+    return sum
+
+
+number = 3434
+result = sum_number(number)
 print(result)
 
 
